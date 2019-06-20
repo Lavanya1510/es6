@@ -19,18 +19,37 @@ New:
 Syntax:
 
 Variable:
-	const todoList = ["Milk","Cow"];
-	let counter = 10;
-	counter = 5;
+        let x=0;
+	const colors = [];
+        colors.push('red');
+        colors.push('green');
+        console.log(colors);
+	const list = ["a","b"];
 Loop:
 	const list=[1,2,3,4,5]
 	for(let i=0; i< list.length; i++){
 		console.log(i);
 	}
-String Concatenations:
+	
+Arrow functions:
+        let func = a => {} // parentheses optional with one parameter
+        let func = (a, b, c) => {} // parentheses required with multiple parameters
+	
+	
+Concatenation/string interpolation:
+	let str = `Release Date: ${date}`
 	const name = "Some";
 	const age=25;
 	console.log("Hello my name is ${name} and m age is ${age}");
+
+Multi-line strings:
+        let str = `This text
+            is on
+            multiple lines`
+	  
+Implicit returns:
+       let func = (a, b, c) => a + b + c
+	
 Object literals:
 	function getBook(title, author){
 		return{
@@ -40,6 +59,7 @@ Object literals:
 		}
 	var book = getBook("Harry Potter","JK");
 	console.log(book);
+	
 Object deconstruction:
 	const list = {
 		name: "Shopping List",
