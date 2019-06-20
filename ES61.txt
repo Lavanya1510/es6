@@ -1,0 +1,13 @@
+ES6 syntax: let a=10;
+const a=10;
+ES6 Eg:
+1). function testlet(){
+let a=30;
+if(true){
+let a=50;
+console.log(a);
+}
+2). const colors = [];
+colors.push('red');
+colors.push('green');
+console.log(colors);

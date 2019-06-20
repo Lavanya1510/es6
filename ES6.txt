@@ -1,0 +1,18 @@
+ES6:
+   ECMAScript -> scripting language.
+ES6:The most recent version of ECMAscript. Very significant update with many changes.First major update since ES6.
+
+New:
+-> let and const Declarations.  ->let:Like var. var denoted globally. 
+                                  let used to set limit the scope to functions or loops which is very useful.
+-> Destructing variables: It helps to destract data from arrays & objects into distinct variables.
+-> Classes and Inheritance
+-> Template Strings
+-> String features
+-> Math & Number Features
+-> New Data Structures - map and set
+-> Iterators 
+-> Generators - Functions-pass the value and yiels it
+-> Promises & Asynchronous Data 
+-> Arrow Functions
+
