@@ -16,3 +16,108 @@ New:
 -> Promises & Asynchronous Data 
 -> Arrow Functions
 
+Syntax:
+
+Variable:
+	const todoList = ["Milk","Cow"];
+	let counter = 10;
+	counter = 5;
+Loop:
+	const list=[1,2,3,4,5]
+	for(let i=0; i< list.length; i++){
+		console.log(i);
+	}
+String Concatenations:
+	const name = "Some";
+	const age=25;
+	console.log("Hello my name is ${name} and m age is ${age}");
+Object literals:
+	function getBook(title, author){
+		return{
+			title,
+			author
+			};
+		}
+	var book = getBook("Harry Potter","JK");
+	console.log(book);
+Object deconstruction:
+	const list = {
+		name: "Shopping List",
+		items: ["Milk","Cow"]
+		};
+	const {name, items} = list;
+	console.log(name, items)
+Arrow Function:
+	const sayLocation = (location) =>{
+		console.log("m location is ${location}");
+		};
+	sayLocation("paris");  
+	
+	const user={
+		name:'Some',
+		age:25;
+		sayName:function(){
+			console.log('My name is ${this.name}');
+			const fullName = () =>{
+				console.log('My name is ${this.name} and my age is ${this.age}');
+		};
+		fullName();
+		}
+		};
+		user.sayName();
+ Event:
+	button.addEventListener('click',function(){
+		let that = this;
+		var addFade = function(){
+			this.style.display = "none";
+			};
+		});
+Default parameters:
+	const add = (c+1, d+1) =>{
+		console.log(c+d);
+		};
+	add();
+Array Function:
+	const shoppingList = ["Milk","Cow","Eggs","Banana","Choco"];
+	shoppingList.forEach{(product,index) => {
+		console.log('The index is ${index} and the product is ${product}'));
+		});
+Map:
+	const newList = shoppingList.map(item =>{
+		item=> item+ "new";
+		});
+	console.log(newList);
+Filter:
+	const filterList = shoppingList.filter(item => item === "Eggs");
+	console.log(filterList);
+Constructor functions and classes:
+	class ShoppingList{
+		constructor(items, number){
+			this.items = items;
+			this.num= num;
+		}
+	sayList(){
+		console.log(this.items);
+		}
+	}
+	const myList = new ShoppingList(['Milk,Choco,Redbull'],3);
+	class Product extends ShoppingList{
+		constructor(items, num,amount, cost){
+			super(items, num);
+			this.amount = amount;
+			this.cost= cost;
+			}
+		}
+	const product = new Product(['Redbull, Chocolate, Candy'],3,2,20);
+	product.sayList();
+Promises:
+	const prom= new Promise(resolve, reject) =>{
+		setTimeout() =>{
+		resolve({user: "Some", pass:"something");
+		//reject(new Error('Something went wrong!'));
+		},2000);
+	});
+	prom.then(data =>{
+		console.log(data);
+		});
+	//.catch(err => console.log(err));
